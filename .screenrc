@@ -4,11 +4,7 @@
 startup_message off
 
 # create layout
-layout new 0:full
-
-# setup layout0
 screen 0
-layout select 0
 split -v
 focus right
 screen 1
