@@ -71,7 +71,7 @@ augroup ProjectDrawer
 augroup END
 
 " NOW WE CAN:
-" - :edit a folder to open a file browser
+" - :edit <folder> to open a file browser
 " - <CR>/v/t to open in an h-split/v-split/tab
 " - check |netrw-browse-maps| for more mappings
 
