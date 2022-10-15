@@ -1,4 +1,4 @@
-" THIS .VIMRC IS BROUGHT TO YOU BY:
+" THIS .VIMRC IS (PARTIALLY) BROUGHT TO YOU BY:
 " https://github.com/changemewtf/no_plugins
 
 
@@ -10,6 +10,7 @@ set nocompatible
 " Enable syntax colors and netrw
 syntax enable
 filetype plugin on
+set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
 
 
 " FINDING FILES:
