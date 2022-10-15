@@ -10,7 +10,12 @@ set nocompatible
 " Enable syntax colors and netrw
 syntax enable
 filetype plugin on
+set ruler
 set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
+let timer = timer_start(4000, 'UpdateStatusBar',{'repeat':-1})
+function! UpdateStatusBar(timer)
+  execute 'let &ro = &ro'
+endfunction
 
 
 " FINDING FILES:
