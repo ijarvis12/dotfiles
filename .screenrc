@@ -3,6 +3,9 @@
 # turn off welcome msg
 startup_message off
 
+# rids screen of residual text from editors
+altscreen on
+
 # create layout
 layout new 0:full
 screen 0
