@@ -7,9 +7,14 @@
 " No vi keybindings
 set nocompatible
 
+" Enable mouse support
+:set mouse=a
+
 " Enable syntax colors and netrw
 syntax enable
 filetype plugin on
+
+" Set ruler, format, and update time interval
 set ruler
 set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
 let timer = timer_start(4000, 'UpdateStatusBar',{'repeat':-1})
