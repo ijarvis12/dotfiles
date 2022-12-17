@@ -8,7 +8,7 @@
 set nocompatible
 
 " Enable mouse support
-:set mouse=a
+set mouse=a
 
 " Enable syntax colors and netrw
 syntax enable
