@@ -23,6 +23,7 @@ function! UpdateStatusBar(timer)
 endfunction
 
 
+
 " FINDING FILES:
 
 " Search subfolders
@@ -40,6 +41,21 @@ set wildmenu
 " - :b <file> lets you autocomplete any open buffer
 
 
+
+" FILE BROWSING:
+
+" Tweaks for browsing
+let g:netrw_liststyle = 3
+"let g:netrw_browse_split = 2
+"let g:netrw_altv = 1
+
+" NOW WE CAN:
+" - :edit <folder> to open a file browser
+" - <CR>/v/t to open in an h-split/v-split/tab
+" - check |netrw-browse-maps| for more mappings
+
+
+
 " TAG JUMPING:
 
 " Create the 'tags' file (may need to install ctags first)
@@ -52,6 +68,7 @@ command! MakeTags !ctags -R .
 
 " THINGS TO CONSIDER:
 " - This doesn't help if you want a visual list of tags
+
 
 
 " AUTOCOMPLETE:
@@ -68,18 +85,6 @@ command! MakeTags !ctags -R .
 " - Use ^n and ^p to go back and forth in the suggestion list
 
 
-" FILE BROWSING:
-
-" Tweaks for browsing
-let g:netrw_liststyle = 3
-"let g:netrw_browse_split = 2
-"let g:netrw_altv = 1
-
-" NOW WE CAN:
-" - :edit <folder> to open a file browser
-" - <CR>/v/t to open in an h-split/v-split/tab
-" - check |netrw-browse-maps| for more mappings
-
 
 " SNIPPETS:
 
@@ -89,6 +94,7 @@ let g:netrw_liststyle = 3
 " NOW WE CAN:
 " - Take over the world!
 "   (with much fewer keystrokes)
+
 
 
 " BUILD INTEGRATION:
