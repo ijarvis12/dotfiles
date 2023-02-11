@@ -10,6 +10,9 @@ set nocompatible
 " Enable mouse support
 set mouse=a
 
+" Set line numbering
+set number
+
 " Enable syntax colors and netrw
 syntax enable
 filetype plugin on
