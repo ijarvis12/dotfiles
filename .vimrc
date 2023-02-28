@@ -10,6 +10,7 @@ set nocompatible
 
 " Enable mouse support
 set mouse=a
+set mousehide
 
 " Set line numbering
 set number
