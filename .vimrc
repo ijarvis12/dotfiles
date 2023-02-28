@@ -15,6 +15,10 @@ set mousehide
 " Set line numbering
 set number
 
+" Configure backspace so it acts as it should act
+set backspace=eol,start,indent
+set whichwrap+=<,>,h,l
+
 " Enable syntax colors and netrw
 syntax enable
 filetype plugin indent on
