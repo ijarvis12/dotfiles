@@ -2,6 +2,7 @@
 " https://github.com/changemewtf/no_plugins
 
 
+
 " BASIC SETUP:
 
 " No vi keybindings
