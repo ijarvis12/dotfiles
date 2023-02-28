@@ -16,7 +16,7 @@ set number
 
 " Enable syntax colors and netrw
 syntax enable
-filetype plugin on
+filetype plugin indent on
 
 " Set ruler, format, and update time interval
 set ruler
