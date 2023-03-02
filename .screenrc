@@ -10,7 +10,7 @@ altscreen on
 layout new 0:full
 screen 0
 split -v
-focus right
+focus next
 screen 1
 split
 focus next
@@ -28,3 +28,9 @@ hardstatus alwayslastline '%{= G}[ %{G}%H ]%{g}[%= %{= w}%?%-Lw%?%{= R}%n*%f %t%
 #backtick 0 5 5 "/bin/date" '+%Y-%m-%d'
 #backtick 1 5 5 "/bin/date" '+%H:%M'
 #hardstatus alwayslastline '%{#00ff00}[ %H ][%{#ffffff}%= %{7}%?%-Lw%?%{1;0}%{1}(%{15}%n%f%t%?(%u)%?%{1;0}%{1})%{7}%?%+Lw%?%? %=%{#00ff00}][ %{#00a5ff}%{6}%0` %{#ffffff}%{7}%1`%{#00ff00} ]'
+
+# keybindings for window control simialar to vim
+bindkey ^j resize -v -1
+bindkey ^k resize -v +1
+bindkey ^h resize -h -1
+bindkey ^l resize -h +1
