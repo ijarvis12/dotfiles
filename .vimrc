@@ -31,6 +31,9 @@ function! UpdateStatusBar(timer)
   execute 'let &ro = &ro'
 endfunction
 
+" Set terminal normal mode keybinding, for dwm.vim ease of window management
+tmap <Esc> <C-W>N
+
 
 
 " FINDING FILES:
