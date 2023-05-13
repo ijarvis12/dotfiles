@@ -117,8 +117,12 @@ command! MakeTags !ctags -R .
 " Configure the 'make' command to run RSpec
 "set makeprg=bundle\ exec\ rspec\ -f\ QuickfixFormatter
 
+autocmd FileType python set makeprg=pylint\ %\ &&\ python3\ %
+autocmd FileType haskell set makeprg=hint\ %\ &&\ ghc\ %
+autocmd FileType bash compiler bash
+
 " NOW WE CAN:
-" - Run :make to run RSpec
+" - Run :make to run makeprg
 " - :cl to list errors
 " - :cc# to jump to error by number
 " - :cn and :cp to navigate forward and back
