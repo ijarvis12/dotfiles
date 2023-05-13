@@ -112,7 +112,7 @@ command! MakeTags !ctags -R .
 " BUILD INTEGRATION:
 
 " Steal Mr. Bradley's formatter & add it to our spec_helper
-" http://philipbradley.net/rspec-into-vim-with-quickfix
+" http://philipbradley.net/posts/rspec-into-vim-with-quickfix
 
 " Configure the 'make' command to run RSpec
 "set makeprg=bundle\ exec\ rspec\ -f\ QuickfixFormatter
