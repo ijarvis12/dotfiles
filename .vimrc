@@ -112,8 +112,11 @@ command! MakeTags !ctags -R .
 " BUILD INTEGRATION:
 
 set shell=bash
-autocmd FileType python set makeprg=pylint\ %\ &&\ python3\ %
-autocmd FileType haskell set makeprg=hint\ %\ &&\ ghc\ %
+set errorformat=%f:%l:%m
+autocmd FileType c compiler gcc
+autocmd FileType c++ compiler g++
+autocmd FileType python compiler python3
+autocmd FileType haskell compiler ghc
 autocmd FileType bash compiler bash
 
 " Steal Mr. Bradley's formatter & add it to our spec_helper
