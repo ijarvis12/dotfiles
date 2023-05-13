@@ -111,15 +111,6 @@ command! MakeTags !ctags -R .
 
 " BUILD INTEGRATION:
 
-set shell=bash
-set errorformat=%f:%l:%m
-autocmd FileType c compiler gcc
-autocmd FileType cpp compiler g++
-autocmd FileType lua compiler lua
-autocmd FileType python compiler python3
-autocmd FileType haskell compiler ghc
-autocmd FileType bash compiler bash
-
 " Steal Mr. Bradley's formatter & add it to our spec_helper
 " http://philipbradley.net/posts/rspec-into-vim-with-quickfix
 
