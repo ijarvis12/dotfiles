@@ -115,6 +115,7 @@ set shell=bash
 set errorformat=%f:%l:%m
 autocmd FileType c compiler gcc
 autocmd FileType cpp compiler g++
+autocmd FileType lua compiler lua
 autocmd FileType python compiler python3
 autocmd FileType haskell compiler ghc
 autocmd FileType bash compiler bash
