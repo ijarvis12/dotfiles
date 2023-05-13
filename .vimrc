@@ -111,6 +111,7 @@ command! MakeTags !ctags -R .
 
 " BUILD INTEGRATION:
 
+set shell=bash
 autocmd FileType python set makeprg=pylint\ %\ &&\ python3\ %
 autocmd FileType haskell set makeprg=hint\ %\ &&\ ghc\ %
 autocmd FileType bash compiler bash
