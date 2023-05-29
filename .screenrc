@@ -18,12 +18,13 @@ screen 1
 split
 focus next
 screen 2
-screen -X "/usr/bin/top"
+screen -t top -X "/usr/bin/env" top -i
 focus next
 
 # status line
 hardstatus off
-hardstatus alwayslastline '%{= G}[ %{G}%H ]%{g}[%= %{= w}%?%-Lw%?%{= R}%n*%f %t%?%{= R}(%u)%?%{= w}%+Lw%?%= %{= g}][ %{y}Load: %l %{g}][ %{B}%Y-%m-%d %{W}%C:%s %A %{g}]'
+# hardstatus alwayslastline '%{= G}[ %{G}%H ]%{g}[%= %{= w}%?%-Lw%?%{= R}%n*%f %t%?%{= R}(%u)%?%{= w}%+Lw%?%= %{= g}][ %{y}Load: %l %{g}][ %{B}%Y-%m-%d %{W}%C:%s %A %{g}]'
+hardstatus alwayslastline '%{G}[ Screen ]%{g}[ %{W}%H %{g}][%= %{w}%w %=%{g}][ %{y}Load: %l %{g}][ %{B}%Y-%m-%d %{W}%C:%s %A %{g}]'
 
 # status line for newer version (5+)
 # truecolors on
@@ -37,3 +38,7 @@ bindkey ^j focus next
 bindkey ^k focus prev
 bindkey ^h resize -v +1
 bindkey ^l resize -h +1
+
+# screensaver
+blankerprg "/usr/bin/cmatrix" -ba
+idle 300 blanker
