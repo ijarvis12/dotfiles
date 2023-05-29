@@ -25,7 +25,8 @@ filetype plugin indent on
 
 " Set ruler, format, and update time interval
 set ruler
-set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
+" set rulerformat=%55(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %5l,%-6(%c%V%)\ %P%)
+set rulerformat=%30(%{strftime('%a\ %b\ %e\ %I:%M\ %p')}\ %l,%L(%c)\ %p%)
 let timer = timer_start(4000, 'UpdateStatusBar',{'repeat':-1})
 function! UpdateStatusBar(timer)
   execute 'let &ro = &ro'
@@ -71,7 +72,7 @@ let g:netrw_liststyle = 3
 " TAG JUMPING:
 
 " Create the 'tags' file (may need to install ctags first)
-command! MakeTags !ctags -R .
+" command! MakeTags !ctags -R .
 
 " NOW WE CAN:
 " - Use ^] to jump to tag under cursor
