@@ -3,6 +3,9 @@
 # turn off welcome msg
 startup_message off
 
+# use 256 color (maybe not necessary for v5+)
+term screen-256color
+
 # rids screen of residual text from editors
 altscreen on
 
@@ -22,15 +25,15 @@ focus next
 hardstatus off
 hardstatus alwayslastline '%{= G}[ %{G}%H ]%{g}[%= %{= w}%?%-Lw%?%{= R}%n*%f %t%?%{= R}(%u)%?%{= w}%+Lw%?%= %{= g}][ %{y}Load: %l %{g}][ %{B}%Y-%m-%d %{W}%C:%s %A %{g}]'
 
-# status line for newer version
-#truecolors on
-#hardstatus off
-#backtick 0 5 5 "/bin/date" '+%Y-%m-%d'
-#backtick 1 5 5 "/bin/date" '+%H:%M'
-#hardstatus alwayslastline '%{#00ff00}[ %H ][%{#ffffff}%= %{7}%?%-Lw%?%{1;0}%{1}(%{15}%n%f%t%?(%u)%?%{1;0}%{1})%{7}%?%+Lw%?%? %=%{#00ff00}][ %{#00a5ff}%{6}%0` %{#ffffff}%{7}%1`%{#00ff00} ]'
+# status line for newer version (5+)
+# truecolors on
+# hardstatus off
+# backtick 0 5 5 "/bin/date" '+%Y-%m-%d'
+# backtick 1 5 5 "/bin/date" '+%H:%M'
+# hardstatus alwayslastline '%{#00ff00}[ %H ][%{#ffffff}%= %{7}%?%-Lw%?%{1;0}%{1}(%{15}%n%f%t%?(%u)%?%{1;0}%{1})%{7}%?%+Lw%?%? %=%{#00ff00}][ %{#00a5ff}%{6}%0` %{#ffffff}%{7}%1`%{#00ff00} ]'
 
 # keybindings for window control simialar to vim
-bindkey ^j resize -v -1
-bindkey ^k resize -v +1
-bindkey ^h resize -h -1
+bindkey ^j focus next
+bindkey ^k focus prev
+bindkey ^h resize -v +1
 bindkey ^l resize -h +1
