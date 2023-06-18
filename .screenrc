@@ -33,12 +33,6 @@ hardstatus alwayslastline '%{G}[ Screen ]%{g}[ %{W}%H %{g}][%= %{w}%w %=%{g}][ %
 # backtick 1 5 5 "/bin/date" '+%H:%M'
 # hardstatus alwayslastline '%{#00ff00}[ %H ][%{#ffffff}%= %{7}%?%-Lw%?%{1;0}%{1}(%{15}%n%f%t%?(%u)%?%{1;0}%{1})%{7}%?%+Lw%?%? %=%{#00ff00}][ %{#00a5ff}%{6}%0` %{#ffffff}%{7}%1`%{#00ff00} ]'
 
-# keybindings for window control simialar to vim
-bindkey ^j focus next
-bindkey ^k focus prev
-bindkey ^h resize -v +1
-bindkey ^l resize -h +1
-
 # screensaver
 blankerprg "/usr/bin/cmatrix" -ba
 idle 300 blanker
