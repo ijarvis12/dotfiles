@@ -10,7 +10,7 @@ term screen-256color
 altscreen on
 
 # create layout
-layout new 0:full
+layout new 0
 screen 0
 split -v
 focus next
