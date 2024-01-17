@@ -1,0 +1,25 @@
+## .NANORC for GNU NANO ##
+## Made by Ian P. Jarvis ##
+
+# wrap lines (when enabled) at blank chars
+set atblanks
+
+# auto indent lines
+set autoindent
+
+# use bold text instead of reverse video for title and help lines
+set boldtext
+
+# display a guidestripe for not inserting chars after column
+set guidestripe 256
+set stripecolor normal,crimson
+
+# display a scrollbar for viewing purposes
+set indicator
+set scrollercolor blue
+
+# display linenumbers
+set linenumbers
+
+# when reading in a file, set it in a new buffer
+set multibuffer
