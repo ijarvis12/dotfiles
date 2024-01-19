@@ -1,7 +1,7 @@
 ## .NANORC for GNU NANO ##
 ## Made by Ian P. Jarvis ##
 
-# wrap lines (when enabled) at blank chars
+# wrap lines and at blank chars
 set atblanks
 set softwrap
 
