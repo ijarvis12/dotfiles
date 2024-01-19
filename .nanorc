@@ -3,6 +3,7 @@
 
 # wrap lines (when enabled) at blank chars
 set atblanks
+set softwrap
 
 # auto indent lines
 set autoindent
