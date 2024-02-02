@@ -11,6 +11,12 @@ set autoindent
 # use bold text instead of reverse video for title and help lines
 set boldtext
 
+# use reverse video for selected text (for cutting)
+set selectedcolor bold,black,white
+
+# set file locking (uses a warning message)
+set locking
+
 # display a guidestripe for not inserting chars after column
 set guidestripe 256
 set stripecolor normal,crimson
