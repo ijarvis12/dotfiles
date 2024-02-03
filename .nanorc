@@ -11,8 +11,9 @@ set autoindent
 # use bold text instead of reverse video for title and help lines
 set boldtext
 
-# use reverse video for selected text (for cutting)
+# use reverse video for selected text, and for deleting with backspace
 set selectedcolor bold,black,white
+set zap
 
 # set file locking (uses a warning message)
 set locking
