@@ -17,7 +17,6 @@ focus next
 screen 1
 split
 focus next
-screen 2
 screen -t top -X "/usr/bin/env" top -i
 focus next
 
