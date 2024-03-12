@@ -9,6 +9,9 @@ term screen-256color
 # rids screen of residual text from editors
 altscreen on
 
+# use mouse tracking
+mousetrack on
+
 # create layout
 layout new 0
 screen 0
