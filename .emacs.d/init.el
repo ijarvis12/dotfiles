@@ -1,1 +1,1 @@
-(tool-bar-mode t)
+(menu-bar--display-line-numbers-mode-absoulte t)
