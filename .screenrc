@@ -36,5 +36,5 @@ hardstatus alwayslastline '%{G}[ Screen ]%{g}[ %{W}%H %{g}][%= %{w}%w %=%{g}][ %
 # hardstatus alwayslastline '%{#00ff00}[ %H ][%{#ffffff}%= %{7}%?%-Lw%?%{1;0}%{1}(%{15}%n%f%t%?(%u)%?%{1;0}%{1})%{7}%?%+Lw%?%? %=%{#00ff00}][ %{#00a5ff}%{6}%0` %{#ffffff}%{7}%1`%{#00ff00} ]'
 
 # screensaver
-blankerprg "/usr/bin/cmatrix" -ba
+blankerprg "/usr/bin/env" cmatrix -ba
 idle 300 blanker
